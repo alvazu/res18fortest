@@ -51,12 +51,6 @@ CpuBackendContext cpuBackendContext;
 
 
 
-
-void random_fill_tensor(TensorX *tensor){
-
-}
-
-
 void add_mid_result_nchw(int n,int c,int h,int w,const char*name){
 	const int outsh[4]={n,h,w,c};
 	TensorX* tensor = (TensorX*)malloc(sizeof(TensorX));
